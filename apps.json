@@ -34,5 +34,32 @@
     "founders_username": ["madhur"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/VCOVVUD.png"]
+  },
+  {
+    "name": "Searchcaster",
+    "description": "Search for any cast. Updates every 30 minutes.",
+    "categories": ["search"],
+    "url": "https://searchcaster.xyz",
+    "founders_username": [],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/kkzh4Sd.png"]
+  },
+  {
+    "name": "Instacaster",
+    "description": "Farcaster in images. Your daily dose of visual updates.",
+    "categories": ["photos"],
+    "url": "https://www.instacaster.xyz",
+    "founders_username": ["zachterrell"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/Ovm5roq.png"]
+  },
+  {
+    "name": "Bebcaster",
+    "description": "A communities platform built on top of the Farcaster and BΞB protocol.",
+    "categories": ["social"],
+    "url": "https://bebcaster.beb.xyz",
+    "founders_username": ["jc"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/30r198B.jpg"]
   }
 ]
