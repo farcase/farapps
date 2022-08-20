@@ -128,7 +128,7 @@ const Home = ({ apps }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container className={classes.wrapper} size={1400}>
       <HeroText />
-      <Grid>
+      <Grid gutter="xl">
         {apps.map(app => {
           return (
             <Grid.Col sm={6} md={4} key={app.name}>
