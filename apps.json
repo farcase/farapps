@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Castalytics",
+    "description": "The analytics platform for Farcast.",
+    "categories": ["analytics"],
+    "url": "https://castalytics.vercel.app",
+    "founders_username": ["alvesjtiago"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/Ke9fagN.png"]
+  },
+  {
+    "name": "Eventcaster",
+    "description": "The social events network.",
+    "categories": ["social", "events"],
+    "url": "https://www.farcaster.events/",
+    "founders_username": ["matthew", "dylsteck"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/331zrxZ.jpg"]
+  },
+  {
+    "name": "Farcaster News",
+    "description": "Latest and top news from the Farcaster community.",
+    "categories": ["social", "news"],
+    "url": "https://www.farcasternews.xyz/",
+    "founders_username": ["kn"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/4iQJbIF.png"]
+  }
+]
