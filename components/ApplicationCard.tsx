@@ -50,7 +50,9 @@ export function ApplicationCard({ image, title, description, url }: BadgeCardPro
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
-        <Image src={image} alt={title} height={180} />
+        <a target="_blank" rel="noopener noreferrer" href={url}>
+          <Image src={image} alt={title} height={180} />
+        </a>
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">

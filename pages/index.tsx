@@ -1,7 +1,19 @@
 import type { InferGetStaticPropsType } from 'next'
+import { useState } from 'react'
 
-import { createStyles, Title, Text, Container, Grid } from '@mantine/core'
+import {
+  createStyles,
+  Title,
+  Text,
+  Container,
+  Grid,
+  TextInput,
+  Tooltip,
+  Center,
+} from '@mantine/core'
 import { ApplicationCard } from '../components/ApplicationCard'
+
+import { IconInfoCircle } from '@tabler/icons'
 
 import appsFile from '../apps.json'
 
@@ -65,7 +77,7 @@ const useStyles = createStyles(theme => ({
 
   description: {
     textAlign: 'center',
-    marginBottom: '80px',
+    marginBottom: 40,
 
     '@media (max-width: 520px)': {
       textAlign: 'left',
@@ -124,12 +136,44 @@ function HeroText() {
 
 const Home = ({ apps }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { classes } = useStyles()
+  const [search, setSearch] = useState('')
+
+  const filteredApps = apps.filter(app => {
+    return (
+      app.name.toLowerCase().includes(search.toLowerCase()) ||
+      app.description.toLowerCase().includes(search.toLowerCase()) ||
+      app.founders_username.join(' ').toLowerCase().includes(search.toLowerCase()) ||
+      app.categories.join(' ').toLowerCase().includes(search.toLowerCase())
+    )
+  })
+
+  const rightSection = (
+    <Tooltip
+      label="Search by app, description, founder and categories"
+      position="top-end"
+      withArrow
+      transition="pop-bottom-right"
+    >
+      <Text color="dimmed" sx={{ cursor: 'help' }}>
+        <Center>
+          <IconInfoCircle size={18} stroke={1.5} />
+        </Center>
+      </Text>
+    </Tooltip>
+  )
 
   return (
     <Container className={classes.wrapper} size={1400}>
       <HeroText />
+      <Container p={0} size={600} mb={40}>
+        <TextInput
+          rightSection={rightSection}
+          placeholder="Search for your favorite apps"
+          onChange={event => setSearch(event.currentTarget.value)}
+        />
+      </Container>
       <Grid gutter="xl">
-        {apps.map(app => {
+        {filteredApps.map(app => {
           return (
             <Grid.Col sm={6} md={4} key={app.name}>
               <ApplicationCard
