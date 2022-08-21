@@ -1,6 +1,4 @@
-import { Card, Image, Text, Group, Button, createStyles } from '@mantine/core'
-import { url } from 'inspector'
-import Link from 'next/link'
+import { Card, Image, Text, Group, Button, createStyles, Badge } from '@mantine/core'
 
 const useStyles = createStyles(theme => ({
   card: {
@@ -32,20 +30,17 @@ interface BadgeCardProps {
   title: string
   description: string
   url: string
+  categories: string[]
 }
 
-export function ApplicationCard({ image, title, description, url }: BadgeCardProps) {
+export function ApplicationCard({ image, title, description, url, categories }: BadgeCardProps) {
   const { classes, theme } = useStyles()
 
-  //   const features = badges.map(badge => (
-  //     <Badge
-  //       color={theme.colorScheme === 'dark' ? 'dark' : 'gray'}
-  //       key={badge.label}
-  //       leftSection={badge.emoji}
-  //     >
-  //       {badge.label}
-  //     </Badge>
-  //   ))
+  const badges = categories.map(badge => (
+    <Badge color={theme.colorScheme === 'dark' ? 'dark' : 'gray'} key={badge}>
+      {badge}
+    </Badge>
+  ))
 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
@@ -64,6 +59,15 @@ export function ApplicationCard({ image, title, description, url }: BadgeCardPro
         <Text size="sm" mt="xs">
           {description}
         </Text>
+      </Card.Section>
+
+      <Card.Section className={classes.section}>
+        <Text mt="md" className={classes.label} color="dimmed">
+          Categories
+        </Text>
+        <Group spacing={7} mt={5}>
+          {badges}
+        </Group>
       </Card.Section>
 
       <Group mt="xs">

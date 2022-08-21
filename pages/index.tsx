@@ -181,6 +181,7 @@ const Home = ({ apps }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 description={app.description}
                 image={app.screenshots[0]}
                 url={app.url}
+                categories={app.categories}
               />
             </Grid.Col>
           )
