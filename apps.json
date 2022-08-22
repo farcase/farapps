@@ -47,7 +47,7 @@
   {
     "name": "Perl",
     "description": "Perl is a treasure hunt for people to collect the perls of wisdom from the internet. We're starting off in the tight-knit community of Farcaster before expanding to uncharted lands.",
-    "categories": ["social"],
+    "categories": ["social", "bookmark"],
     "url": "https://perl.xyz",
     "founders_username": ["ace"],
     "logo": "",
@@ -63,6 +63,15 @@
     "founders_username": ["jc"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/30r198B.jpg"]
+  },
+  {
+    "name": "Pincaster",
+    "description": "Pincaster is the best way to save casts, share collections, and explore topics on Farcaster.",
+    "categories": ["social", "bookmark"],
+    "url": "https://pincaster.xyz",
+    "founders_username": ["matallo"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/52otKEw.png"]
   },
   {
     "name": "Instacaster",
