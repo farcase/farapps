@@ -1,4 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
+import Image from 'next/image'
+import Logo from '../public/logo.png'
 import { useState } from 'react'
 
 import {
@@ -10,6 +12,8 @@ import {
   TextInput,
   Tooltip,
   Center,
+  Group,
+  Anchor,
 } from '@mantine/core'
 import { ApplicationCard } from '../components/ApplicationCard'
 
@@ -29,7 +33,6 @@ const useStyles = createStyles(theme => ({
   wrapper: {
     position: 'relative',
     paddingTop: 120,
-    paddingBottom: 80,
 
     '@media (max-width: 755px)': {
       paddingTop: 80,
@@ -110,6 +113,30 @@ const useStyles = createStyles(theme => ({
       },
     },
   },
+  footer: {
+    marginTop: 120,
+    borderTop: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+    }`,
+  },
+
+  innerFooter: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingTop: theme.spacing.xl,
+    paddingBottom: theme.spacing.xl,
+
+    [theme.fn.smallerThan('xs')]: {
+      flexDirection: 'column',
+    },
+  },
+
+  links: {
+    [theme.fn.smallerThan('xs')]: {
+      marginTop: theme.spacing.md,
+    },
+  },
 }))
 
 function HeroText() {
@@ -187,6 +214,24 @@ const Home = ({ apps }: InferGetStaticPropsType<typeof getStaticProps>) => {
           )
         })}
       </Grid>
+
+      <div className={classes.footer}>
+        <div className={classes.innerFooter}>
+          <a href="/">
+            <div style={{ width: '180px', height: '70px', position: 'relative' }}>
+              <Image src={Logo} alt="Logo" layout="fill" objectFit="contain" />
+            </div>
+          </a>
+          <Group className={classes.links}>
+            <Anchor color="dimmed" href="https://github.com/farcase/farapps#apps" target="_blank">
+              How to add an app
+            </Anchor>
+            <Anchor color="dimmed" href="https://github.com/farcase/farapps" target="_blank">
+              Github
+            </Anchor>
+          </Group>
+        </div>
+      </div>
     </Container>
   )
 }
