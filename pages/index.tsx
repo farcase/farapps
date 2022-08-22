@@ -1,4 +1,4 @@
-import type { InferGetStaticPropsType } from 'next'
+import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../public/logo.png'
 import { useState, useEffect } from 'react'
@@ -231,11 +231,11 @@ const Home = () => {
 
       <div className={classes.footer}>
         <div className={classes.innerFooter}>
-          <a href="/">
+          <Link href="/">
             <div style={{ width: '180px', height: '70px', position: 'relative' }}>
               <Image src={Logo} alt="Logo" layout="fill" objectFit="contain" />
             </div>
-          </a>
+          </Link>
           <Group className={classes.links}>
             <Anchor color="dimmed" href="https://github.com/farcase/farapps#apps" target="_blank">
               How to add an app
