@@ -1,7 +1,8 @@
 import type { InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import Logo from '../public/logo.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 import {
   createStyles,
@@ -20,14 +21,6 @@ import { ApplicationCard } from '../components/ApplicationCard'
 import { IconInfoCircle } from '@tabler/icons'
 
 import appsFile from '../apps.json'
-
-export const getStaticProps = async () => {
-  return {
-    props: {
-      apps: appsFile,
-    },
-  }
-}
 
 const useStyles = createStyles(theme => ({
   wrapper: {
@@ -161,11 +154,22 @@ function HeroText() {
   )
 }
 
-const Home = ({ apps }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home = () => {
   const { classes } = useStyles()
+
+  const router = useRouter()
   const [search, setSearch] = useState('')
 
-  const filteredApps = apps.filter(app => {
+  useEffect(() => {
+    if (!router.isReady) {
+      return
+    }
+
+    const { query } = router.query
+    setSearch((query as string) || '')
+  }, [router.isReady])
+
+  const filteredApps = appsFile.filter(app => {
     return (
       app.name.toLowerCase().includes(search.toLowerCase()) ||
       app.description.toLowerCase().includes(search.toLowerCase()) ||
@@ -196,7 +200,17 @@ const Home = ({ apps }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <TextInput
           rightSection={rightSection}
           placeholder="Search for your favorite apps"
-          onChange={event => setSearch(event.currentTarget.value)}
+          onChange={event => {
+            setSearch(event.currentTarget.value)
+            router.push(
+              {
+                query: { query: event.currentTarget.value },
+              },
+              undefined,
+              { shallow: true },
+            )
+          }}
+          value={search}
         />
       </Container>
       <Grid gutter="xl">
