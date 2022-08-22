@@ -40,7 +40,7 @@
     "description": "Search for any cast. Updates every 30 minutes.",
     "categories": ["search"],
     "url": "https://searchcaster.xyz",
-    "founders_username": [],
+    "founders_username": ["gregskril "],
     "logo": "",
     "screenshots": ["https://i.imgur.com/kkzh4Sd.png"]
   },
@@ -81,5 +81,32 @@
     "founders_username": ["zachterrell"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/Ovm5roq.png"]
+  },
+  {
+    "name": "Farcarte",
+    "description": "World view with the location of each farcaster.",
+    "categories": ["map"],
+    "url": "https://farcarte.xyz",
+    "founders_username": ["dmlb"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/p4P5XBc.png"]
+  },
+  {
+    "name": "castRSS",
+    "description": "RSS feed for Farcaster.",
+    "categories": ["rss", "feed"],
+    "url": "https://www.castrss.xyz",
+    "founders_username": ["shawki"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/8DTTmBt.png"]
+  },
+  {
+    "name": "Flockcaster",
+    "description": "Find your twitter friends on Farcaster and let's move there!.",
+    "categories": ["twitter"],
+    "url": "https://www.flockcaster.xyz",
+    "founders_username": ["shawki"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/T6XRCG1.png"]
   }
 ]
