@@ -1,5 +1,14 @@
 [
   {
+    "name": "Yup",
+    "description": "Social Network for Curators.",
+    "categories": ["social"],
+    "url": "https://app.yup.io/feed/farcaster",
+    "founders_username": ["Nir", "Vernon"],
+    "logo": "https://app.yup.io/images/logos/logo.svg",
+    "screenshots": ["https://i.imgur.com/0w0uw8v.png"]
+  },
+  {
     "name": "Castalytics",
     "description": "The analytics platform for Farcaster.",
     "categories": ["analytics"],
