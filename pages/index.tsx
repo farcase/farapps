@@ -232,9 +232,11 @@ const Home = () => {
       <div className={classes.footer}>
         <div className={classes.innerFooter}>
           <Link href="/">
-            <div style={{ width: '180px', height: '70px', position: 'relative' }}>
-              <Image src={Logo} alt="Logo" layout="fill" objectFit="contain" />
-            </div>
+            <a>
+              <div style={{ width: '180px', height: '70px', position: 'relative' }}>
+                <Image src={Logo} alt="Logo" layout="fill" objectFit="contain" />
+              </div>
+            </a>
           </Link>
           <Group className={classes.links}>
             <Anchor color="dimmed" href="https://github.com/farcase/farapps#apps" target="_blank">
