@@ -4,7 +4,7 @@
     "description": "Social Network for Curators.",
     "categories": ["social"],
     "url": "https://app.yup.io/feed/farcaster",
-    "founders_username": ["Nir", "Vernon"],
+    "founders_username": ["nir", "vern"],
     "logo": "https://app.yup.io/images/logos/logo.svg",
     "screenshots": ["https://i.imgur.com/0w0uw8v.png"]
   },
