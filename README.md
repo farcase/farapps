@@ -17,3 +17,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Apps
 
 Adding and updating apps can be done by editing the `apps.json` file. Follow the same structure as the previous apps, open a PR and once merged it will be automatically added and deployed.
+
+## Project updates
+
+In order to display product udpates 2 pieces of information are needed at `apps.json`:
+
+- founders_username
+- tag
+
+The tag will be used to get all casts that contain that tag from the founders feed.
