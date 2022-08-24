@@ -97,7 +97,7 @@ const AppUpdates: NextPage = () => {
     if (slug) {
       fetchCasts()
     }
-  }, [slug])
+  }, [slug, app])
 
   return (
     <Container my="md">
@@ -116,6 +116,7 @@ const AppUpdates: NextPage = () => {
             body={cast.body.data.text}
             authorName={cast.meta.displayName}
             authorImage={cast.meta.avatar}
+            key={cast.merkleRoot}
           />
         )
       })}

@@ -167,7 +167,7 @@ const Home = () => {
 
     const { query } = router.query
     setSearch((query as string) || '')
-  }, [router.isReady])
+  }, [router.isReady, router.query])
 
   const filteredApps = appsFile.filter(app => {
     return (
