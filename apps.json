@@ -1,6 +1,7 @@
 [
   {
     "name": "Yup",
+    "slug": "yup",
     "description": "Social Network for Curators.",
     "categories": ["social"],
     "url": "https://app.yup.io/feed/farcaster",
@@ -10,6 +11,7 @@
   },
   {
     "name": "Castalytics",
+    "slug": "castalytics",
     "description": "The analytics platform for Farcaster.",
     "categories": ["analytics"],
     "url": "https://castalytics.vercel.app",
@@ -19,6 +21,7 @@
   },
   {
     "name": "Eventcaster",
+    "slug": "eventcaster",
     "description": "The social events network.",
     "categories": ["social", "events"],
     "url": "https://www.farcaster.events",
@@ -28,6 +31,7 @@
   },
   {
     "name": "Farcaster News",
+    "slug": "farcaster-news",
     "description": "Latest and top news from the Farcaster community.",
     "categories": ["social", "news"],
     "url": "https://www.farcasternews.xyz",
@@ -37,6 +41,7 @@
   },
   {
     "name": "Trendcaster",
+    "slug": "trendcaster",
     "description": "Global trends for Farcaster.",
     "categories": ["analytics"],
     "url": "https://www.trendcaster.xyz",
@@ -46,6 +51,7 @@
   },
   {
     "name": "Searchcaster",
+    "slug": "searchcaster",
     "description": "Search for any cast. Updates every 30 minutes.",
     "categories": ["search"],
     "url": "https://searchcaster.xyz",
@@ -55,6 +61,7 @@
   },
   {
     "name": "Perl",
+    "slug": "perl",
     "description": "Perl is a treasure hunt for people to collect the perls of wisdom from the internet. We're starting off in the tight-knit community of Farcaster before expanding to uncharted lands.",
     "categories": ["social", "bookmark"],
     "url": "https://perl.xyz",
@@ -62,10 +69,12 @@
     "logo": "",
     "screenshots": [
       "https://perl.xyz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fperl-cover-image.aeefb21b.jpg&w=3840&q=75"
-    ]
+    ],
+    "tag": "#BuildingPerl"
   },
   {
     "name": "Bebcaster",
+    "slug": "bebcaster",
     "description": "A communities platform built on top of the Farcaster and BΞB protocol.",
     "categories": ["social"],
     "url": "https://bebcaster.beb.xyz",
@@ -75,6 +84,7 @@
   },
   {
     "name": "Pincaster",
+    "slug": "pincaster",
     "description": "Pincaster is the best way to save casts, share collections, and explore topics on Farcaster.",
     "categories": ["social", "bookmark"],
     "url": "https://pincaster.xyz",
@@ -84,6 +94,7 @@
   },
   {
     "name": "Instacaster",
+    "slug": "instacaster",
     "description": "Farcaster in images. Your daily dose of visual updates.",
     "categories": ["photos"],
     "url": "https://www.instacaster.xyz",
@@ -93,6 +104,7 @@
   },
   {
     "name": "Farcarte",
+    "slug": "farcarte",
     "description": "World view with the location of each farcaster.",
     "categories": ["map"],
     "url": "https://farcarte.xyz",
@@ -102,6 +114,7 @@
   },
   {
     "name": "castRSS",
+    "slug": "castrss",
     "description": "RSS feed for Farcaster.",
     "categories": ["rss", "feed"],
     "url": "https://www.castrss.xyz",
@@ -111,6 +124,7 @@
   },
   {
     "name": "Flockcaster",
+    "slug": "flockcaster",
     "description": "Find your twitter friends on Farcaster and let's move there!.",
     "categories": ["twitter"],
     "url": "https://www.flockcaster.xyz",

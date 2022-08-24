@@ -1,4 +1,5 @@
 import { Card, Image, Text, Group, Button, createStyles, Badge } from '@mantine/core'
+import Link from 'next/link'
 import { App } from '../types'
 
 const useStyles = createStyles(theme => ({
@@ -88,6 +89,14 @@ export function ApplicationCard({ app }: { app: App }) {
         >
           Go to app
         </Button>
+
+        {app.tag && (
+          <Link href={`/apps/${app.slug}`} passHref>
+            <Button color="gray" component="a" radius="md" style={{ flex: 1 }}>
+              App updates
+            </Button>
+          </Link>
+        )}
       </Group>
     </Card>
   )
