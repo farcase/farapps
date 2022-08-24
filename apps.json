@@ -58,7 +58,7 @@
     "description": "Perl is a treasure hunt for people to collect the perls of wisdom from the internet. We're starting off in the tight-knit community of Farcaster before expanding to uncharted lands.",
     "categories": ["social", "bookmark"],
     "url": "https://perl.xyz",
-    "founders_username": ["ace"],
+    "founders_username": ["ace", "peterkim"],
     "logo": "",
     "screenshots": [
       "https://perl.xyz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fperl-cover-image.aeefb21b.jpg&w=3840&q=75"
