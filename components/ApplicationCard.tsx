@@ -1,4 +1,5 @@
 import { Card, Image, Text, Group, Button, createStyles, Badge } from '@mantine/core'
+import { App } from '../types'
 
 const useStyles = createStyles(theme => ({
   card: {
@@ -25,18 +26,10 @@ const useStyles = createStyles(theme => ({
   },
 }))
 
-interface BadgeCardProps {
-  image: string
-  title: string
-  description: string
-  url: string
-  categories: string[]
-}
-
-export function ApplicationCard({ image, title, description, url, categories }: BadgeCardProps) {
+export function ApplicationCard({ app }: { app: App }) {
   const { classes, theme } = useStyles()
 
-  const badges = categories.map(badge => (
+  const badges = app.categories.map(badge => (
     <Badge color={theme.colorScheme === 'dark' ? 'dark' : 'gray'} key={badge}>
       {badge}
     </Badge>
@@ -45,19 +38,32 @@ export function ApplicationCard({ image, title, description, url, categories }: 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
-        <a target="_blank" rel="noopener noreferrer" href={url}>
-          <Image src={image} alt={title} height={180} />
+        <a target="_blank" rel="noopener noreferrer" href={app.url}>
+          <Image src={app.screenshots[0]} alt={app.name} height={180} />
         </a>
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">
         <Group position="apart">
           <Text size="lg" weight={500}>
-            {title}
+            {app.name}
           </Text>
         </Group>
         <Text size="sm" mt="xs">
-          {description}
+          {app.description}
+          {app.founders_username && (
+            <Text color="dimmed">
+              by{' '}
+              {app.founders_username.map((username, i) => {
+                return (
+                  <>
+                    <b>{username}</b>
+                    {i < app.founders_username.length - 1 ? ', ' : ''}
+                  </>
+                )
+              })}
+            </Text>
+          )}
         </Text>
       </Card.Section>
 
@@ -75,7 +81,7 @@ export function ApplicationCard({ image, title, description, url, categories }: 
           component="a"
           target="_blank"
           rel="noopener noreferrer"
-          href={url}
+          href={app.url}
           radius="md"
           style={{ flex: 1 }}
         >

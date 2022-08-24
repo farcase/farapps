@@ -217,13 +217,7 @@ const Home = () => {
         {filteredApps.map(app => {
           return (
             <Grid.Col sm={6} md={4} key={app.name}>
-              <ApplicationCard
-                title={app.name}
-                description={app.description}
-                image={app.screenshots[0]}
-                url={app.url}
-                categories={app.categories}
-              />
+              <ApplicationCard app={app} />
             </Grid.Col>
           )
         })}
