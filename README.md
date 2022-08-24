@@ -22,7 +22,7 @@ Adding and updating apps can be done by editing the `apps.json` file. Follow the
 
 In order to display product udpates 2 pieces of information are needed at `apps.json`:
 
-- founders_username
-- tag
+- `founders_username`
+- `tag`
 
 The tag will be used to get all casts that contain that tag from the founders feed.
