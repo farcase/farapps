@@ -131,5 +131,16 @@
     "founders_username": ["shawki"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/T6XRCG1.png"]
+  },
+  {
+    "name": "Farapps",
+    "slug": "farapps",
+    "description": "Highlighting the best apps and builders on the Farcaster community.",
+    "categories": ["apps"],
+    "url": "https://farapps.vercel.app",
+    "founders_username": ["alvesjtiago"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/hPiS8uF.png"],
+    "tag": "#BuildingFarapps"
   }
 ]
