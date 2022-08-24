@@ -4,6 +4,7 @@ import { App } from '../types'
 const useStyles = createStyles(theme => ({
   card: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+    marginBottom: '20px',
   },
 
   section: {
@@ -56,10 +57,10 @@ export function ApplicationCard({ app }: { app: App }) {
               by{' '}
               {app.founders_username.map((username, i) => {
                 return (
-                  <>
+                  <span key={username}>
                     <b>{username}</b>
                     {i < app.founders_username.length - 1 ? ', ' : ''}
-                  </>
+                  </span>
                 )
               })}
             </Text>
