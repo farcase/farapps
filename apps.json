@@ -142,5 +142,15 @@
     "logo": "",
     "screenshots": ["https://i.imgur.com/hPiS8uF.png"],
     "tag": "#BuildingFarapps"
+  },
+  {
+    "name": "Menucaster",
+    "slug": "menucaster",
+    "description": "Electron Mac app that allows you to cast to the Farcaster ecosystem from your menu bar.",
+    "categories": ["client"],
+    "url": "http://menucaster.xyz",
+    "founders_username": ["zachterrell"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/Jl0MCdt.png"]
   }
 ]
