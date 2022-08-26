@@ -14,7 +14,7 @@
     "slug": "castalytics",
     "description": "The analytics platform for Farcaster.",
     "categories": ["analytics"],
-    "url": "https://castalytics.vercel.app",
+    "url": "https://castalytics.farcase.xyz",
     "founders_username": ["alvesjtiago"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/Ke9fagN.png"]
@@ -137,7 +137,7 @@
     "slug": "farapps",
     "description": "Highlighting the best apps and builders on the Farcaster community.",
     "categories": ["apps"],
-    "url": "https://farapps.vercel.app",
+    "url": "https://farapps.farcase.xyz",
     "founders_username": ["alvesjtiago"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/hPiS8uF.png"],
