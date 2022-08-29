@@ -78,9 +78,10 @@
     "description": "A communities platform built on top of the Farcaster and BΞB protocol.",
     "categories": ["social"],
     "url": "https://bebcaster.beb.xyz",
-    "founders_username": ["jc"],
+    "founders_username": ["jc", "nico"],
     "logo": "",
-    "screenshots": ["https://i.imgur.com/30r198B.jpg"]
+    "screenshots": ["https://i.imgur.com/30r198B.jpg"],
+    "tag": "#BEB"
   },
   {
     "name": "Pincaster",
