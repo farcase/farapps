@@ -153,5 +153,16 @@
     "founders_username": ["zachterrell"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/Jl0MCdt.png"]
+  },
+  {
+    "name": "Stochaster",
+    "slug": "stochaster",
+    "description": "Find a new Farcaster to follow on every refresh!",
+    "categories": ["social", "discovery"],
+    "url": "https://www.stochaster.xyz/",
+    "founders_username": ["cameron"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/5CAoRfL.png"],
+    "tag": "#stochaster"
   }
 ]
