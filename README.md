@@ -2,6 +2,8 @@
 
 Highlighting the best apps and builders on the Farcaster community.
 
+![Screenshot](https://i.imgur.com/QjMW6wi.png)
+
 ## Getting Started
 
 This project uses Next.js.
