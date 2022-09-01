@@ -17,10 +17,6 @@ const useStyles = createStyles(theme => ({
     paddingBottom: theme.spacing.md,
   },
 
-  like: {
-    color: theme.colors.red[6],
-  },
-
   label: {
     textTransform: 'uppercase',
     fontSize: theme.fontSizes.xs,

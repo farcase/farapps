@@ -38,20 +38,6 @@ const useStyles = createStyles(theme => ({
     zIndex: 1,
   },
 
-  dots: {
-    position: 'absolute',
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
-
-    '@media (max-width: 755px)': {
-      display: 'none',
-    },
-  },
-
-  dotsLeft: {
-    left: 0,
-    top: 0,
-  },
-
   title: {
     textAlign: 'center',
     fontWeight: 800,
@@ -81,31 +67,6 @@ const useStyles = createStyles(theme => ({
     },
   },
 
-  controls: {
-    marginTop: theme.spacing.lg,
-    display: 'flex',
-    justifyContent: 'center',
-
-    '@media (max-width: 520px)': {
-      flexDirection: 'column',
-    },
-  },
-
-  control: {
-    '&:not(:first-of-type)': {
-      marginLeft: theme.spacing.md,
-    },
-
-    '@media (max-width: 520px)': {
-      height: 42,
-      fontSize: theme.fontSizes.md,
-
-      '&:not(:first-of-type)': {
-        marginTop: theme.spacing.md,
-        marginLeft: 0,
-      },
-    },
-  },
   footer: {
     marginTop: 120,
     borderTop: `1px solid ${
