@@ -1,57 +1,12 @@
 import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { Cast } from '../../types'
 import { useRouter } from 'next/router'
-import {
-  Container,
-  Loader,
-  createStyles,
-  Text,
-  Avatar,
-  Group,
-  TypographyStylesProvider,
-  Paper,
-} from '@mantine/core'
+import { Cast as CastComponent } from '../../components/Cast'
+import { Container, Loader, Anchor } from '@mantine/core'
 
 import appsFile from '../../apps.json'
-
-const useStyles = createStyles(theme => ({
-  cast: {
-    padding: `${theme.spacing.lg}px ${theme.spacing.xl}px`,
-  },
-
-  body: {
-    paddingLeft: 54,
-    paddingTop: theme.spacing.sm,
-    fontSize: theme.fontSizes.sm,
-    whiteSpace: 'pre-line',
-  },
-}))
-
-interface CastProps {
-  postedAt: number
-  body: string
-  authorName: string
-  authorImage: string
-}
-
-export function Cast({ postedAt, body, authorName, authorImage }: CastProps) {
-  const { classes } = useStyles()
-  return (
-    <Paper withBorder radius="md" className={classes.cast} sx={{ marginBottom: '20px' }}>
-      <Group>
-        <Avatar src={authorImage} radius="xl" />
-        <div>
-          <Text size="sm">{authorName}</Text>
-          <Text size="xs" color="dimmed">
-            {new Date(postedAt).toLocaleDateString('en-US')}
-          </Text>
-        </div>
-      </Group>
-      <TypographyStylesProvider className={classes.body}>{body}</TypographyStylesProvider>
-    </Paper>
-  )
-}
 
 const AppUpdates: NextPage = () => {
   const [loading, setLoading] = useState(false)
@@ -101,7 +56,15 @@ const AppUpdates: NextPage = () => {
 
   return (
     <Container my="md">
-      <h3>{app?.name} updates</h3>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <h3>{app?.name} updates</h3>
+
+        <Link href={`/`} passHref>
+          <Anchor component="a" size="xs" color="dimmed">
+            Back to all apps
+          </Anchor>
+        </Link>
+      </div>
 
       {loading && (
         <Container my="md">
@@ -110,15 +73,7 @@ const AppUpdates: NextPage = () => {
       )}
 
       {casts.map(cast => {
-        return (
-          <Cast
-            postedAt={cast.body.publishedAt}
-            body={cast.body.data.text}
-            authorName={cast.meta.displayName}
-            authorImage={cast.meta.avatar}
-            key={cast.merkleRoot}
-          />
-        )
+        return <CastComponent cast={cast} key={cast.merkleRoot} />
       })}
     </Container>
   )
