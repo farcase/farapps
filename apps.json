@@ -164,5 +164,16 @@
     "logo": "",
     "screenshots": ["https://i.imgur.com/5CAoRfL.png"],
     "tag": "#stochaster"
+  },
+    {
+    "name": "SQLcaster",
+    "slug": "sqlcaster",
+    "description": "Search Farcaster with SQL",
+    "categories": ["search", "analytics"],
+    "url": "https://sqlcaster.xyz/",
+    "founders_username": ["whatrocks"],
+    "logo": "",
+    "screenshots": ["https://imgur.com/a/azUyL0r"],
+    "tag": "#sqlcaster"
   }
 ]
