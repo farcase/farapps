@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Farcaster Indexer",
+    "slug": "gskril-farcaster-indexer",
+    "description": "Index all profiles and casts on the Farcaster protocol. Powers the Farcaster Search API.",
+    "categories": ["indexer"],
+    "url": "https://github.com/gskril/farcaster-indexer",
+    "founders_username": ["gskril"]
+  },
+  {
+    "name": "Farcaster Indexer",
+    "slug": "kn-farcaster-indexer",
+    "description": "This software indexes Farcaster data into a Supabase database. The primary purpose of the database is to serve Farcaster News.",
+    "categories": ["indexer"],
+    "url": "https://github.com/lfglabs/farcaster-indexer",
+    "founders_username": ["kn"]
+  },
+  {
+    "name": "Farcaster Auth",
+    "slug": "farcaster-auth",
+    "description": "A library for authenticating a user on the Farcaster Protocol.",
+    "categories": ["auth"],
+    "url": "https://github.com/zachterrell57/farcaster-auth",
+    "founders_username": ["zachterrell"]
+  },
+  {
+    "name": "Farcaster.js",
+    "slug": "farcaster-js",
+    "description": "A tool for interacting with the Farcaster social network. Facilitates reading and writing content, creating accounts and managing the self-hosting of your own content.",
+    "categories": ["publish", "register"],
+    "url": "https://github.com/standard-crypto/farcaster-js",
+    "founders_username": ["whatrocks"]
+  },
+  {
+    "name": "Farcaster feed",
+    "slug": "farcaster-feed",
+    "description": "Farcaster-feed is a Farcaster protocol syndication tool for Node.js.",
+    "categories": ["syndication"],
+    "url": "https://github.com/whatrocks/farcaster-feed",
+    "founders_username": ["whatrocks"]
+  },
+  {
+    "name": "Farcaster Python",
+    "slug": "farcaster-python",
+    "description": "Python client library to interact with Farcaster ABI.",
+    "categories": ["api"],
+    "url": "https://github.com/goksu/farcaster-python",
+    "founders_username": ["gt"]
+  }
+]
