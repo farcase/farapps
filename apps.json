@@ -159,13 +159,13 @@
     "slug": "stochaster",
     "description": "Find a new Farcaster to follow on every refresh!",
     "categories": ["social", "discovery"],
-    "url": "https://www.stochaster.xyz/",
+    "url": "https://www.stochaster.xyz",
     "founders_username": ["cameron"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/5CAoRfL.png"],
     "tag": "#stochaster"
   },
-    {
+  {
     "name": "SQLcaster",
     "slug": "sqlcaster",
     "description": "Search Farcaster with SQL",
@@ -175,5 +175,16 @@
     "logo": "",
     "screenshots": ["https://i.imgur.com/RBEpFlV.png"],
     "tag": "#sqlcaster"
+  },
+  {
+    "name": "Friendcaster",
+    "slug": "friendcaster",
+    "description": "Create your own Farcaster interaction circle.",
+    "categories": ["social", "visualization"],
+    "url": "https://friend-caster.herokuapp.com",
+    "founders_username": ["yashkarthik"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/u3YnUkI.png"],
+    "tag": "#friendcaster"
   }
 ]
