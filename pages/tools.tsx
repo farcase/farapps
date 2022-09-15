@@ -190,7 +190,7 @@ const Home = () => {
             <tbody>
               {filteredTools.map(item => {
                 return (
-                  <tr key={item.name}>
+                  <tr key={item.slug}>
                     <td>
                       <Group spacing="sm">
                         <div>
