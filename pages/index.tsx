@@ -109,6 +109,11 @@ function HeroText() {
       <Container p={0} size={600}>
         <Text size="lg" color="dimmed" className={classes.description}>
           Highlighting the best apps and builders on the Farcaster community.
+          <br />
+          Interested in building apps?{' '}
+          <Link href="/tools" passHref>
+            <Anchor component="a">We've got you covered.</Anchor>
+          </Link>
         </Text>
       </Container>
     </div>
