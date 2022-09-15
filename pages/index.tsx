@@ -112,7 +112,7 @@ function HeroText() {
           <br />
           Interested in building apps?{' '}
           <Link href="/tools" passHref>
-            <Anchor component="a">We've got you covered.</Anchor>
+            <Anchor component="a">We&apos;ve got you covered.</Anchor>
           </Link>
         </Text>
       </Container>
