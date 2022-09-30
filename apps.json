@@ -186,5 +186,15 @@
     "logo": "",
     "screenshots": ["https://i.imgur.com/u3YnUkI.png"],
     "tag": "#friendcaster"
+  },
+  {
+    "name": "Sealcaster",
+    "slug": "sealcaster",
+    "description": "Protect your identity and cast anonymously with a burner wallet.",
+    "categories": ["social", "zk"],
+    "url": "https://sealcaster.xyz",
+    "founders_username": ["sealcaster"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/gPSCnUw.png"]
   }
 ]
