@@ -55,7 +55,7 @@
     "description": "Search for any cast. Updates every 30 minutes.",
     "categories": ["search"],
     "url": "https://searchcaster.xyz",
-    "founders_username": ["gregskril "],
+    "founders_username": ["greg "],
     "logo": "",
     "screenshots": ["https://i.imgur.com/kkzh4Sd.png"]
   },
@@ -196,5 +196,15 @@
     "founders_username": ["sealcaster"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/gPSCnUw.png"]
+  },
+  {
+    "name": "Fardrop",
+    "slug": "fardrop",
+    "description": "Create an allowlist of your Farcaster followers",
+    "categories": ["utility"],
+    "url": "https://fardrop.xyz",
+    "founders_username": ["greg"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/qlUe56E.png"]
   }
 ]
