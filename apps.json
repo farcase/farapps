@@ -200,11 +200,21 @@
   {
     "name": "Fardrop",
     "slug": "fardrop",
-    "description": "Create an allowlist of your Farcaster followers",
+    "description": "Create an allowlist of your Farcaster followers.",
     "categories": ["utility"],
     "url": "https://fardrop.xyz",
     "founders_username": ["greg"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/qlUe56E.png"]
+  },
+  {
+    "name": "RemindMe",
+    "slug": "remindme",
+    "description": "Reply to any cast with '@remindme 1 day' to get a reminder!",
+    "categories": ["bot", "reminders"],
+    "url": "https://github.com/backmeupplz/remindme",
+    "founders_username": ["borodutch"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/bsn9BRB.jpg"]
   }
 ]
