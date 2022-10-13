@@ -1,40 +1,23 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { createClient } from '@supabase/supabase-js'
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+const supabase = createClient(process.env.SUPABASE_URL ?? '', process.env.SUPABASE_KEY ?? '')
+
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { username } = req.query
+  const { tag } = JSON.parse(req.body)
 
   if (username) {
-    const options = {
-      headers: {
-        Accept: 'application/json',
-      },
-    }
+    const { data } = await supabase
+      .from('casts')
+      .select('*')
+      .filter('username', 'eq', username)
+      .filter('deleted', 'eq', false)
+      .textSearch('fts', tag as string)
+      .order('published_at', { ascending: false })
+      .limit(1000)
 
-    return fetch(`https://guardian.farcaster.xyz/admin/usernames/${username}`, options)
-      .then(async response => response.json())
-      .then(async response => {
-        return fetch(response.directoryUrl, options)
-          .then(async response => response.json())
-          .then(async response => {
-            return fetch(response.body.addressActivityUrl, options)
-              .then(async response => response.json())
-              .then(async response => {
-                res.status(200).json(response)
-              })
-              .catch(err => {
-                console.log(err)
-                res.status(404).end()
-              })
-          })
-          .catch(err => {
-            console.log(err)
-            res.status(404).end()
-          })
-      })
-      .catch(err => {
-        console.log(err)
-        res.status(404).end()
-      })
+    return res.status(200).json(data)
   } else {
     return res.end()
   }

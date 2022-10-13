@@ -7,7 +7,7 @@ import {
   TypographyStylesProvider,
   Paper,
 } from '@mantine/core'
-import { Cast } from '../types'
+import { FlattenedCast } from '../types'
 
 const useStyles = createStyles(theme => ({
   cast: {
@@ -22,22 +22,20 @@ const useStyles = createStyles(theme => ({
   },
 }))
 
-const Cast = ({ cast }: { cast: Cast }) => {
+const Cast = ({ cast }: { cast: FlattenedCast }) => {
   const { classes } = useStyles()
   return (
     <Paper withBorder radius="md" className={classes.cast} sx={{ marginBottom: '20px' }}>
       <Group>
-        <Avatar src={cast.meta.avatar} radius="xl" />
+        <Avatar src={cast.avatar_url} radius="xl" />
         <div>
-          <Text size="sm">{cast.meta.displayName}</Text>
-          <Anchor href={`farcaster://casts/${cast.merkleRoot}`} size="xs" color="dimmed">
-            {new Date(cast.body.publishedAt).toLocaleDateString('en-US')}
+          <Text size="sm">{cast.display_name}</Text>
+          <Anchor href={`farcaster://casts/${cast.merkle_root}`} size="xs" color="dimmed">
+            {new Date(cast.published_at).toLocaleDateString('en-US')}
           </Anchor>
         </div>
       </Group>
-      <TypographyStylesProvider className={classes.body}>
-        {cast.body.data.text}
-      </TypographyStylesProvider>
+      <TypographyStylesProvider className={classes.body}>{cast.text}</TypographyStylesProvider>
     </Paper>
   )
 }

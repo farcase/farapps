@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Cast } from '../../types'
+import { FlattenedCast } from '../../types'
 import { useRouter } from 'next/router'
 import { Cast as CastComponent } from '../../components/Cast'
 import { Container, Loader, Anchor } from '@mantine/core'
@@ -10,7 +10,7 @@ import appsFile from '../../apps.json'
 
 const AppUpdates: NextPage = () => {
   const [loading, setLoading] = useState(false)
-  const [casts, setCasts] = useState<Cast[]>([])
+  const [casts, setCasts] = useState<FlattenedCast[]>([])
 
   const router = useRouter()
   const { slug } = router.query
@@ -31,18 +31,16 @@ const AppUpdates: NextPage = () => {
           headers: {
             Accept: 'application/json',
           },
+          method: 'POST',
+          body: JSON.stringify({ tag: app.tag }),
         })
-        const jsonResponse: Cast[] = await response.json()
+        const jsonResponse: FlattenedCast[] = await response.json()
 
         casts.push(...jsonResponse)
       }
 
-      const filteredCasts = casts.filter(cast => {
-        return cast.body.data.text.toLowerCase().includes(app.tag?.toLowerCase() as string)
-      })
-
-      const orderedCasts = filteredCasts.sort((a, b) => {
-        return b.body.publishedAt - a.body.publishedAt
+      const orderedCasts = casts.sort((a, b) => {
+        return new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
       })
 
       setCasts(orderedCasts)
@@ -73,7 +71,7 @@ const AppUpdates: NextPage = () => {
       )}
 
       {casts.map(cast => {
-        return <CastComponent cast={cast} key={cast.merkleRoot} />
+        return <CastComponent cast={cast} key={cast.merkle_root} />
       })}
     </Container>
   )

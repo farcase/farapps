@@ -30,3 +30,30 @@ export interface Cast {
     }
   }
 }
+
+export interface FlattenedCast {
+  type: 'text-short'
+  published_at: Date
+  sequence: number
+  address: string
+  username: string
+  text: string
+  reply_parent_merkle_root: string | null
+  prev_merkle_root: string | null
+  signature: string
+  merkle_root: string
+  thread_merkle_root: string
+  display_name: string | null
+  avatar_url: string | null
+  avatar_verified: boolean
+  mentions: JSON | any
+  num_reply_children: number | null
+  reply_parent_username: string | null
+  reply_parent_address: string | null
+  reactions: number | null
+  recasts: number | null
+  watches: number | null
+  recasters: JSON | any
+  deleted: boolean
+  recast: boolean
+}
