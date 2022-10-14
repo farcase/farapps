@@ -226,5 +226,15 @@
     "founders_username": ["alvesjtiago"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/Th1Kgli.png"]
+  },
+  {
+    "name": "Alertcaster",
+    "slug": "alertcaster",
+    "description": "Monitor Farcaster for interesting new content",
+    "categories": ["alerts", "notifications"],
+    "url": "https://alertcaster.xyz/",
+    "founders_username": ["andyjagoe"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/R9hkowT.png"]
   }
 ]
