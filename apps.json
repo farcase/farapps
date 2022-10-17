@@ -137,7 +137,7 @@
     "name": "Farapps",
     "slug": "farapps",
     "description": "Highlighting the best apps and builders on the Farcaster community.",
-    "categories": ["apps"],
+    "categories": ["apps", "discovery"],
     "url": "https://farapps.farcase.xyz",
     "founders_username": ["alvesjtiago"],
     "logo": "",
@@ -236,5 +236,15 @@
     "founders_username": ["andyjagoe"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/R9hkowT.png"]
+  },
+  {
+    "name": "Launchcaster",
+    "slug": "launchcaster",
+    "description": "Discover the best projects on Farcaster",
+    "categories": ["apps", "discovery"],
+    "url": "https://launchcaster.xyz/",
+    "founders_username": ["jayme"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/skCbM8H.png"]
   }
 ]
