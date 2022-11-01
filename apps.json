@@ -246,5 +246,15 @@
     "founders_username": ["jayme"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/skCbM8H.png"]
+  },
+  {
+    "name": "Discove",
+    "slug": "discove",
+    "description": "Create and share search based or algorithmic feeds, starting with Farcaster",
+    "categories": ["social", "discovery", "search"],
+    "url": "https://www.discove.xyz/",
+    "founders_username": ["df"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/ycbT5jn.png"]
   }
 ]
