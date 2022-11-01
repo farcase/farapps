@@ -46,5 +46,13 @@
     "categories": ["api"],
     "url": "https://github.com/goksu/farcaster-python",
     "founders_username": ["gt"]
+  },
+  {
+    "name": "Sealcaster CLI",
+    "slug": "sealcaster-cli",
+    "description": "A way to publish casts anonymously at Farcaster to @sealcaster.",
+    "categories": ["privacy"],
+    "url": "https://github.com/BigWhaleLabs/sealcaster-cli",
+    "founders_username": ["borodutch"]
   }
 ]
