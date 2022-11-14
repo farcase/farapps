@@ -24,18 +24,48 @@ const useStyles = createStyles(theme => ({
 
 const Cast = ({ cast }: { cast: FlattenedCast }) => {
   const { classes } = useStyles()
+
+  const imgurUrl = 'https://i.imgur.com/'
+  let text = cast.text
+  let attachment = null
+
+  if (text.includes(imgurUrl)) {
+    attachment = imgurUrl + text.split(imgurUrl)[1]
+    text = text.split(imgurUrl)[0]
+  }
+
   return (
-    <Paper withBorder radius="md" className={classes.cast} sx={{ marginBottom: '20px' }}>
+    <Paper
+      withBorder
+      shadow="xs"
+      radius="md"
+      className={classes.cast}
+      sx={{ marginBottom: '20px' }}
+    >
       <Group>
-        <Avatar src={cast.avatar_url} radius="xl" />
+        <a href={`farcaster://profiles/${cast.address}`}>
+          <Avatar src={cast.avatar_url} radius="xl" />
+        </a>
         <div>
           <Text size="sm">{cast.display_name}</Text>
           <Anchor href={`farcaster://casts/${cast.merkle_root}`} size="xs" color="dimmed">
-            {new Date(cast.published_at).toLocaleDateString('en-US')}
+            {new Date(cast.published_at).toLocaleDateString('en-US', {
+              hour: 'numeric',
+              minute: 'numeric',
+            })}
           </Anchor>
         </div>
       </Group>
-      <TypographyStylesProvider className={classes.body}>{cast.text}</TypographyStylesProvider>
+      <TypographyStylesProvider className={classes.body}>
+        {text}
+        {attachment && (
+          <div style={{ marginTop: '10px', textAlign: 'center' }}>
+            <a href={attachment} target="_blank" rel="noreferrer">
+              <img src={attachment} loading="lazy" alt="" />
+            </a>
+          </div>
+        )}
+      </TypographyStylesProvider>
     </Paper>
   )
 }
