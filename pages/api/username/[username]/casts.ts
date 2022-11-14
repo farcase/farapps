@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       .select('*')
       .filter('username', 'eq', username)
       .filter('deleted', 'eq', false)
-      .textSearch('fts', tag as string)
+      .textSearch('fts', `'${tag}'`)
       .order('published_at', { ascending: false })
       .limit(1000)
 
