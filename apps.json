@@ -304,7 +304,7 @@
     "description": "Here to help you make new friends. Each week I randomly pair casters together for a coffee chat.",
     "categories": ["social", "telegram"],
     "url": "https://fcast.me/coffeebot",
-    "founders_username": ["matthew"],
+    "founders_username": ["matthew", "ishika"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/mrttTt2.png"]
   }
