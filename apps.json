@@ -230,7 +230,7 @@
   {
     "name": "Alertcaster",
     "slug": "alertcaster",
-    "description": "Monitor Farcaster for interesting new content",
+    "description": "Monitor Farcaster for interesting new content.",
     "categories": ["alerts", "notifications"],
     "url": "https://alertcaster.xyz/",
     "founders_username": ["andyjagoe"],
@@ -240,7 +240,7 @@
   {
     "name": "Launchcaster",
     "slug": "launchcaster",
-    "description": "Discover the best projects on Farcaster",
+    "description": "Discover the best projects on Farcaster.",
     "categories": ["apps", "discovery"],
     "url": "https://launchcaster.xyz/",
     "founders_username": ["jayme"],
@@ -250,12 +250,62 @@
   {
     "name": "Discove",
     "slug": "discove",
-    "description": "Create and share search based or algorithmic feeds, starting with Farcaster",
+    "description": "Create and share search based or algorithmic feeds, starting with Farcaster.",
     "categories": ["social", "discovery", "search"],
     "url": "https://www.discove.xyz/",
     "founders_username": ["df"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/ycbT5jn.png"],
     "tag": "[Build in public: Discove]"
+  },
+  {
+    "name": "OG",
+    "slug": "og",
+    "description": "Open graph embed to share a cast screenshot.",
+    "categories": ["social", "share"],
+    "url": "https://og.farcase.xyz",
+    "founders_username": ["alvesjtiago"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/B63jQLW.png"]
+  },
+  {
+    "name": "Embedcaster",
+    "slug": "embedcaster",
+    "description": "Embed any Farcaster cast.",
+    "categories": ["social", "share"],
+    "url": "https://www.embedcaster.xyz",
+    "founders_username": ["heeroyuy"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/bha2Y23.png"]
+  },
+  {
+    "name": "sharecaster.xyz",
+    "slug": "sharecaster",
+    "description": "Share your favorite casts with beautiful link previews anywhere on the web.",
+    "categories": ["social", "share"],
+    "url": "https://sharecaster.xyz/",
+    "founders_username": ["pfista"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/0SmVOBR.png"]
+  },
+  {
+    "name": "Citycaster",
+    "slug": "citycaster",
+    "description": "Telegram groups of poeple of Farcast in your city",
+    "categories": ["social", "telegram"],
+    "url": "https://www.citycaster.xyz/",
+    "founders_username": ["matthew"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/OayeQ4X.png"]
+  },
+  {
+    "name": "CoffeeBot",
+    "slug": "coffeebot",
+    "description": "Here to help you make new friends. Each week I randomly pair casters together for a coffee chat.",
+    "categories": ["social", "telegram"],
+    "url": "https://fcast.me/coffeebot",
+    "founders_username": ["matthew"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/mrttTt2.png"]
   }
 ]
