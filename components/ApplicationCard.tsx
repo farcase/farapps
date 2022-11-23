@@ -1,4 +1,4 @@
-import { Card, Image, Text, Group, Button, createStyles, Badge } from '@mantine/core'
+import { Anchor, Card, Image, Text, Group, Button, createStyles, Badge } from '@mantine/core'
 import Link from 'next/link'
 import { App } from '../types'
 
@@ -54,10 +54,10 @@ export function ApplicationCard({ app }: { app: App }) {
               by{' '}
               {app.founders_username.map((username, i) => {
                 return (
-                  <span key={username}>
+                  <Anchor href={`https://fcast.me/${username}`} key={username} target="_blank">
                     <b>{username}</b>
                     {i < app.founders_username.length - 1 ? ', ' : ''}
-                  </span>
+                  </Anchor>
                 )
               })}
             </Text>
