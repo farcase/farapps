@@ -9,11 +9,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   if (username) {
     const { data } = await supabase
-      .from('casts')
-      .select('*')
-      .filter('username', 'eq', username)
-      .filter('deleted', 'eq', false)
-      .textSearch('fts', `'${tag}'`)
+      .rpc('casts_regex', { regex: `${tag}` })
+      .eq('author_username', username)
+      .eq('deleted', false)
+      .eq('recast', false)
       .order('published_at', { ascending: false })
       .limit(1000)
 

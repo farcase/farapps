@@ -43,12 +43,10 @@ const Cast = ({ cast }: { cast: FlattenedCast }) => {
       sx={{ marginBottom: '20px' }}
     >
       <Group>
-        <a href={`farcaster://profiles/${cast.address}`}>
-          <Avatar src={cast.avatar_url} radius="xl" />
-        </a>
+        <Avatar src={cast.author_pfp_url} radius="xl" />
         <div>
-          <Text size="sm">{cast.display_name}</Text>
-          <Anchor href={`farcaster://casts/${cast.merkle_root}`} size="xs" color="dimmed">
+          <Text size="sm">{cast.author_display_name}</Text>
+          <Anchor href={`farcaster://casts/${cast.hash}`} size="xs" color="dimmed">
             {new Date(cast.published_at).toLocaleDateString('en-US', {
               hour: 'numeric',
               minute: 'numeric',

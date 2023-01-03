@@ -34,26 +34,22 @@ export interface Cast {
 export interface FlattenedCast {
   type: 'text-short'
   published_at: Date
-  sequence: number
-  address: string
-  username: string
+  author_username: string
   text: string
-  reply_parent_merkle_root: string | null
-  prev_merkle_root: string | null
-  signature: string
-  merkle_root: string
-  thread_merkle_root: string
-  display_name: string | null
-  avatar_url: string | null
-  avatar_verified: boolean
+  thread_hash: string | null
+  parent_hash: string | null
+  hash: string
+  author_fid: string | null
+  author_display_name: string | null
+  author_pfp_url: string | null
+  author_pfp_verified: boolean
   mentions: JSON | any
-  num_reply_children: number | null
-  reply_parent_username: string | null
-  reply_parent_address: string | null
-  reactions: number | null
-  recasts: number | null
-  watches: number | null
-  recasters: JSON | any
+  replies_count: number | null
+  parent_author_username: string | null
+  parent_author_fid: string | null
+  reactions_count: number | null
+  recasts_count: number | null
+  watches_count: number | null
   deleted: boolean
   recast: boolean
 }

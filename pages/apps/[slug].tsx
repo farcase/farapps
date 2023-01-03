@@ -71,7 +71,7 @@ const AppUpdates: NextPage = () => {
       )}
 
       {casts.map(cast => {
-        return <CastComponent cast={cast} key={cast.merkle_root} />
+        return <CastComponent cast={cast} key={cast.hash} />
       })}
     </Container>
   )
