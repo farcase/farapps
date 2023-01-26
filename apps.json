@@ -315,8 +315,8 @@
     "categories": ["community", "video"],
     "url": "https://getabsorb.com",
     "founders_username": ["polluterofminds"],
-    "logo": "https://imgur.com/1rayijC",
-    "screenshots": ["https://imgur.com/lPYWbDd"]
+    "logo": "https://imgur.com/1rayijC.png",
+    "screenshots": ["https://imgur.com/lPYWbDd.png"]
   },
   {
     "name": "Pixel Pool",
@@ -326,6 +326,6 @@
     "url": "https://pixelpool.xyz",
     "founders_username": ["payton"],
     "logo": "https://media.pixelpool.xyz/assets/pixelpool-banner.png",
-    "screenshots": ["https://imgur.com/a/rHpKOsh", "https://imgur.com/a/FWJ8Tqw"]
+    "screenshots": ["https://i.imgur.com/ehRwmIg.png", "https://i.imgur.com/oudVL8I.png"]
   }
 ]
