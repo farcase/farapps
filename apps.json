@@ -307,5 +307,25 @@
     "founders_username": ["matthew", "ishika"],
     "logo": "",
     "screenshots": ["https://i.imgur.com/mrttTt2.png"]
+  },
+  {
+    "name": "Absorb",
+    "slug": "absorb",
+    "description": "Absorb is the spiritual successor to Vine. 7-second videos posted to the open social protocol, Farcaster. Absorb is built with love by Pinata. Every video is stored on IPFS and streamed through a dedicated IPFS gateway from Pinata. You'll need a Farcaster account to post new videos or like existing videos.",
+    "categories": ["community", "video"],
+    "url": "https://getabsorb.com",
+    "founders_username": ["polluterofminds"],
+    "logo": "https://imgur.com/1rayijC.png",
+    "screenshots": ["https://imgur.com/lPYWbDd.png"]
+  },
+  {
+    "name": "Pixel Pool",
+    "slug": "pixelpool",
+    "description": "Pixel Pool is a long-form video sharing platform built on the Farcaster protocol.",
+    "categories": ["community", "video"],
+    "url": "https://pixelpool.xyz",
+    "founders_username": ["payton"],
+    "logo": "https://media.pixelpool.xyz/assets/pixelpool-banner.png",
+    "screenshots": ["https://i.imgur.com/ehRwmIg.png", "https://i.imgur.com/oudVL8I.png"]
   }
 ]
