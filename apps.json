@@ -328,4 +328,14 @@
     "logo": "https://media.pixelpool.xyz/assets/pixelpool-banner.png",
     "screenshots": ["https://i.imgur.com/ehRwmIg.png", "https://i.imgur.com/oudVL8I.png"]
   }
+   {
+    "name": "Purple",
+    "slug": "purple",
+    "description": "Farcaster Superpowers: AI-powered search, live feeds, trending topics, suggested people, and more!",
+    "categories": ["discovery", "search", "notifications"],
+    "url": "https://getpurple.xyz/",
+    "founders_username": ["betashop"],
+    "logo": "https://imgur.com/a/psr6Ub1",
+    "screenshots": ["https://imgur.com/a/l168vKZ"]
+  }
 ]
