@@ -337,5 +337,15 @@
     "founders_username": ["betashop"],
     "logo": "https://i.imgur.com/xGgovOZ.png",
     "screenshots": ["https://i.imgur.com/AqupRT2.png"]
+ },
+ {
+    "name": "Surveycaster",
+    "slug": "survey",
+    "description": "Posts community-driven surveys every Monday and Wednesday.",
+    "categories": ["community, analytics"],
+    "url": "https://fcast.me/survey",
+    "founders_username": ["colin-", "ba"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/hG2sEYt.png"]
  }
 ]
