@@ -30,6 +30,16 @@
     "screenshots": ["https://i.imgur.com/331zrxZ.jpg"]
   },
   {
+    "name": "SayMore",
+    "slug": "saymore",
+    "description": "Ask the people who know... about what they know",
+    "categories": ["creators, content"],
+    "url": "https://SayMore.tv",
+    "founders_username": ["cameron"],
+    "logo": "",
+    "screenshots": ["https://i.imgur.com/IcgQFaP.jpg"]
+  },
+  {
     "name": "Farcaster News",
     "slug": "farcaster-news",
     "description": "Latest and top news from the Farcaster community.",
