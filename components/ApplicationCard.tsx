@@ -54,7 +54,7 @@ export function ApplicationCard({ app }: { app: App }) {
               by{' '}
               {app.founders_username.map((username, i) => {
                 return (
-                  <Anchor href={`https://fcast.me/${username}`} key={username} target="_blank">
+                  <Anchor href={`https://warpcast.com/${username}`} key={username} target="_blank">
                     <b>{username}</b>
                     {i < app.founders_username.length - 1 ? ', ' : ''}
                   </Anchor>
