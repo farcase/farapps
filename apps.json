@@ -361,7 +361,7 @@
    {
     "name": "Buoy",
     "slug": "buoy",
-    "description": "Get real-time notifications about keywords on Farcaster. Powerful filters help you cut through the noise. Stay on top of the conversation with Buoy.",
+    "description": "Buoy is a powerful search engine for Farcaster. Get real-time notifications for keywords. Powerful filters help you cut through the noise. Stay on top of the conversation with Buoy.",
     "categories": ["search", "notifications", "discovery", "tools"],
     "url": "https://buoy.club",
     "founders_username": ["pfista", "jj"],
