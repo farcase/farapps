@@ -362,7 +362,7 @@
     "name": "Buoy",
     "slug": "buoy",
     "description": "Get real-time notifications about keywords on Farcaster. Powerful filters help you cut through the noise. Stay on top of the conversation with Buoy.",
-    "categories": ["search, notifications, discovery, tools"],
+    "categories": ["search", "notifications", "discovery", "tools"],
     "url": "https://buoy.club",
     "founders_username": ["pfista", "jj"],
     "logo": "https://i.imgur.com/j1DS2I7.png",
